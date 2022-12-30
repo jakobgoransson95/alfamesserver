@@ -212,7 +212,14 @@ app.put('/planeringjakobgoransson/:id', (req, res) => {
 
 
 
-app.listen(4000, () => {
-  console.log('working');
-})
+// app.listen(4000, () => {
+//   console.log('working');
+// })
+
+// Establishing the port
+const PORT = process.env.PORT || 4000;
+
+// Executing the server on given port number
+app.listen(PORT, console.log(
+  `Server started on port ${PORT}`));
 
